@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Sparkroad</title>
+  <link rel="stylesheet" href="components/chosen/chosen/chosen.css"/>
+  <link rel="stylesheet" href="components/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+
+  <div class="navbar navbar-static-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="">Sparkroad</a>
+        <ul class="nav">
+          <li><a href="">Messages</a></li>
+          <li><a href="">Attendance</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <form class="navbar-form pull-right">
+          <input class="span2" type="text" placeholder="Username">
+          <input class="span2" type="password" placeholder="Password">
+          <button type="submit" class="btn">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <ul style="margin-top: 10px" class="nav nav-tabs">
+          <li class="active"><a href="">New</a></li>
+          <li><a href="">List</a></li>
+        </ul>
+        <form>
+          <fieldset>
+            <h1>Send a Message</h1>
+
+            <label>To</label>
+              <select class="input-block-level chzn-select" multiple="multiple">
+                <optgroup label="Groups">
+                  <option>Pre-Kindergarten</option>
+                  <option>Kindergarten</option>
+                  <option>1st Grade</option>
+                  <option>2nd Grade</option>
+                  <option>3rd Grade</option>
+                  <option>4th Grade</option>
+                  <option>5th Grade</option>
+                  <option>6th Grade</option>
+                  <option>7th Grade</option>
+                  <option>8th Grade</option>
+                </optgroup>
+                <optgroup label="People">
+                  <option>Twigga</option>
+                  <option>Yassri</option>
+                  <option>Karou</option>
+                  <option>Brimstone</option>
+                  <option>Thiago</option>
+                  <option>Ziri</option>
+                  <option>Amzalag</option>
+                  <option>Svetlana</option>
+                  <option>Madrigal</option>
+                  <option>Akiva</option>
+              </select>
+
+            <label>Message in English</label>
+            <textarea class="input-block-level" rows="5"></textarea>
+
+            <label>Message in Spanish</label>
+            <textarea class="input-block-level" rows="5"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery Options</legend>
+
+            <label class="checkbox inline">Email</label>
+            <input type="checkbox" id="send_email" value="1"/>
+
+            <label class="checkbox inline">Phone</label>
+            <input type="checkbox" id="send_phone" value="1"/>
+
+            <label class="checkbox inline">SMS</label>
+            <input type="checkbox" id="send_sms" value="1"/>
+          </fieldset>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy;Sparkroad, Inc. 2013</p>
+    </div>
+  </footer>
+
+  <script src="components/jquery/jquery.js"></script>
+  <script src="components/chosen/chosen/chosen.jquery.js"></script>
+
+  <script>$(".chzn-select").chosen();</script>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <!-- <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script> -->
+</body>
+</html>
